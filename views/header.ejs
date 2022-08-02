@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <style>
+      * {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: #2a2550;
+        flex-direction: column;
+      }
+
+      p {
+        list-style-type: none;
+        color: #2a2550;
+        font-size: large;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 0%;
+        margin: 0;
+        margin-left: 10%;
+      }
+      .container {
+        text-align: center;
+        background-color: #ff7700;
+        width: 30%;
+        padding: 0.5%;
+        border-radius: 4%;
+      }
+      .date {
+        text-align: center;
+        background-color: #ff7700;
+        width: 30%;
+        padding: 0.5%;
+        border-radius: 2%;
+        margin-bottom: 20px;
+      }
+      .item-add {
+        background-color: #ff7700;
+        border-radius: 2%;
+        margin-top: 20px;
+        width: 30%;
+        padding: 0.5%;
+      }
+      .input {
+        margin: 5%;
+        border: solid rgba(159, 115, 255, 0.344) 2px;
+        background-color: #ffebdacd;
+        width: 70%;
+        text-align: center;
+      }
+      .input:focus {
+        background-color: antiquewhite;
+        outline: none;
+      }
+      .button {
+        background-color: #2a2550;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        padding-bottom: 6px;
+        font-weight: 600;
+        font-size: 20pt;
+      }
+      .cross {
+        background-color: #321fc5;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 10pt;
+      }
+      .item-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        border-bottom: solid #e04d01 2px;
+        width: 100%;
+      }
+      .check {
+        margin-left: 20px;
+      }
+      .check:checked + p {
+        text-decoration: line-through;
+        text-decoration-color: #ffffff;
+      }
+      li {
+        list-style: none;
+        padding: 15px;
+        transition-duration: 500ms;
+      }
+      li:hover {
+        background-color: #e04d01;
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+        color: #2a2550;
+        font-size: large;
+        font-weight: 500;
+      }
+      .delete:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body></body>
+</html>
+<div
+  style="
+    width: 100%;
+    height: 10%;
+    background-color: #736ab4;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 10px 0px #ff7700;
+  "
+>
+  <a href="/">
+    <li>To-Do List</li>
+  </a>
+  <a href="/Work">
+    <li>Work</li>
+  </a>
+  <a href="/About">
+    <li>About</li>
+  </a>
+</div>
